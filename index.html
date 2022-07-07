@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodle 3Docentes</title>
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .accordion {
+            background-color: rgb(255, 255, 255, 1);
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: 1px solid #fff;
+            outline: none;
+            transition: 0.4s;
+            margin-bottom: 6px;
+            border-radius: 8px;
+
+            color: #bd1714;
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .active,
+        .accordion {
+            background-color: rgb(255, 255, 255, 0.9);
+            color: #222;
+        }
+
+        .accordion:hover:after {
+            color: #bd1714;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #bd1714;
+            font-weight: 600;
+            font-size: 22px;
+            float: right;
+            margin-left: 5px;
+            line-height: 1;
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 0px;
+            max-height: 0;
+            height: auto;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+
+        .contepanel {
+            padding: 15px 30px 30px 30px;
+            background-color: rgba(0, 0, 0, 0.45);
+            margin-bottom: 6px;
+            border-radius: 10px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .flex-item {
+            padding: 5px;
+            width: 20%;
+            height: auto;
+            margin: 10px;
+            text-align: center;
+        }
+        @media (max-width: 1200px) {
+            .flex-item {
+            width: 35%;
+        }   
+        }
+        @media (max-width: 678px) {
+            .flex-item {
+            width: 100%;
+            text-align: left;
+            padding-left: 20%;
+        }   
+        .msje_profe {
+            display: block;
+        }
+        .contepanel {
+            padding: 15px 0px 30px 0px;
+            background-color: rgba(0, 0, 0, 0.45);
+            margin-bottom: 6px;
+            border-radius: 10px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fondo_profe">
+        <div class="contenedor_gral">
+            <div class="titgeneralidades">
+                GENERALIDADES
+            </div>
+            <div class="titcurso">
+                Curso: Lorem ipsum
+            </div>
+        </div>
+
+
+
+        <div class="flexbox">
+            <ul class="flex-container">
+                <li class="flex-item"><a href="#">
+                    <img class="ico_svg_profe" src="images/guia.svg" alt="" height="50px">
+                </a></li>
+                <li class="flex-item"><a href="#">
+                    <img class="ico_svg_profe" src="images/horario.svg" alt="" height="50px">
+                </a></li>
+                <li class="flex-item"><a href="#">
+                    <img class="ico_svg_profe" src="images/cronograma.svg" alt="" height="50px">
+                </a></li>
+                <li class="flex-item"><a href="http://www.google.com"><img class="ico_svg_profe" src="images/silabo.svg"
+                    alt="" height="50px"></a></li>
+            </ul>
+        </div>
+
+
+        <div class="contenedor_sec_profe">
+            <div class="col_profe_items">
+                <!-- Accordion -->
+
+
+                <!-- PROFESOR 1 -->
+                <button class="accordion">Docente: Agregar nombres y apellidos</button>
+                <!--Contenido-->
+                <div class="panel">
+                    <div class="contepanel">
+                        <div class="contenedor_bvn">
+                            <div class="msje_profe">
+                                <div class="col_datos">
+                                    <img src="images/icono_profe.png" class="img_doc">
+                                </div>
+                                <div class="col_datos">
+                                        <div class="datosprofe">
+                                            <div class="datop">Nombre: mimail@usmp.pe </div>
+                                        </div>
+                                        <div class="datosprofe">
+                                            <div class="datop">Correo: mimail@usmp.pe </div>
+                                        </div>
+                                        <div class="datosprofe">
+                                            <div class="datop">Modalidad: mimail@usmp.pe </div>
+                                        </div>
+                                </div>
+                                <div class="col_datos">
+                                    <div class="msgbienvenida">Mensaje de bienvenida</div>
+                                    <div class="txtbienvenida">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sollicitudin
+                                        turpis. Integer temi semper fringilla.
+                                        Pellentesque varius varius elit, et scelerisque tortor ultricies at. Donec
+                                        vestibulum diam sed
+                                        laoreet gravida. Suspendisse eu malesuada
+                                        leo. Duis dictum diam id odio ultricies cursus.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fin Contenido-->
+                <!-- FIN PROFESOR -->
+
+<!-- PROFESOR 1 -->
+<button class="accordion">Docente: Agregar nombres y apellidos</button>
+<!--Contenido-->
+<div class="panel">
+    <div class="contepanel">
+
+
+        <div class="contenedor_bvn">
+            <div class="msje_profe">
+                <div class="">
+                    <img src="images/icono_profe.png" class="img_doc">
+                </div>
+                <div class="">
+                    <div class="">
+                        <div class="datosprofe">
+                            <div class="datop">Nombre: mimail@usmp.pe </div>
+                        </div>
+                        <div class="datosprofe">
+                            <div class="datop">Correo: mimail@usmp.pe </div>
+                        </div>
+                        <div class="datosprofe">
+                            <div class="datop">Modalidad: mimail@usmp.pe </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="msgbienvenida">Mensaje de bienvenida</div>
+                    <div class="txtbienvenida">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sollicitudin
+                        turpis. Integer temi semper fringilla.
+                        Pellentesque varius varius elit, et scelerisque tortor ultricies at. Donec
+                        vestibulum diam sed
+                        laoreet gravida. Suspendisse eu malesuada
+                        leo. Duis dictum diam id odio ultricies cursus.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<!--Fin Contenido-->
+<!-- FIN PROFESOR -->
+
+<!-- PROFESOR 1 -->
+<button class="accordion">Docente: Agregar nombres y apellidos</button>
+<!--Contenido-->
+<div class="panel">
+    <div class="contepanel">
+
+
+        <div class="contenedor_bvn">
+            <div class="msje_profe">
+                <div class="">
+                    <img src="images/icono_profe.png" class="img_doc">
+                </div>
+                <div class="">
+                    <div class="">
+                        <div class="datosprofe">
+                            <div class="datop">Nombre: mimail@usmp.pe </div>
+                        </div>
+                        <div class="datosprofe">
+                            <div class="datop">Correo: mimail@usmp.pe </div>
+                        </div>
+                        <div class="datosprofe">
+                            <div class="datop">Modalidad: mimail@usmp.pe </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="msgbienvenida">Mensaje de bienvenida</div>
+                    <div class="txtbienvenida">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel sollicitudin
+                        turpis. Integer temi semper fringilla.
+                        Pellentesque varius varius elit, et scelerisque tortor ultricies at. Donec
+                        vestibulum diam sed
+                        laoreet gravida. Suspendisse eu malesuada
+                        leo. Duis dictum diam id odio ultricies cursus.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+<!--Fin Contenido-->
+<!-- FIN PROFESOR -->
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+
+        for (let i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                for (j = 0; j < acc.length; j++) {
+                    if (j !== i)
+                        acc[j].nextElementSibling.style.maxHeight = null;
+                }
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+
+
+            });
+        }
+    </script>
+</body>
+
+</html>

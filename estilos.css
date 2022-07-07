@@ -1,0 +1,252 @@
+/******HOME GENERALIDADES*******/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fondo_profe {
+  background-image: url(http://fcctp.usmp.edu.pe/images/moodle/home_generalidades/bg_profe.jpg);
+  background-size: cover;
+
+  background-position: center center;
+  padding: 30px 0px 80px 0px;
+  /*max-width: 1200px;*/
+}
+
+.contenedor_tit_profe,
+.contenedor_sec_profe {
+  font-family: 'Poppins', sans-serif;
+}
+
+.contenedor_gral {
+  display: block;
+  max-width: 260px;
+  text-align: center;
+  margin: 0 auto;
+}
+.contenedor_bvn {
+  display: block;
+  padding: 20px 0%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .contenedor_bvn {
+    padding: 20px 0%;
+  }
+}
+.contenedor_sec_profe {
+  display: flex;
+  padding: 0px 2%;
+}
+
+.col_profe {
+  width: 50%;
+}
+
+.col_profe_items {
+  width: 98%;
+}
+
+.tit_profe {
+  text-align: center;
+  flex: none;
+  background-color: #bd1714;
+  color: white;
+  font-size: 28px;
+  padding: 4px 12px;
+}
+
+.msgbienvenida {
+  color: white;
+  font-size: 24px;
+  background-color: #bd1714;
+}
+.msgbienvenida {
+  color: white;
+  font-size: 18px;
+  background-color: #bd1714;
+  max-width: 260px;
+  padding: 8px 20px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  border-radius: 0 25px 25px 0;
+}
+.txtbienvenida{
+  color: white;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 0 25px 25px 0;
+}
+.titgeneralidades {
+  color: white;
+  font-size: 24px;
+  padding: 12px 20px;
+  background-color: #bd1714;
+  border-radius: 40px;
+}
+.titcurso {
+  color: white;
+  font-size: 24px;
+  padding: 30px 0px;
+}
+.infoprofe {
+  display: flex;
+  padding: 0px 2%;
+}
+.fotoprofe,
+.datosprofe {
+  padding-right: 40px;
+}
+.datosprofe {
+  display: block;
+  align-self: center;
+}
+.datop {
+  padding: 8px 20px 12px 20px;
+  color: white;
+  font-size: 14px;
+  text-align: left;
+}
+.datosmaterial {
+  display: flex;
+  margin-bottom: 25px;
+}
+.op_mat {
+  min-width: 25%;
+  padding: 10px 10px;
+  margin: 4px;
+  background-color: #6e9b9e;
+  text-align: left;
+  /*border-right: 1px solid #fff;*/
+  
+}
+@media (max-width: 940px) {
+  .datosmaterial {
+    
+    display: flex !important;
+  }
+  .op_mat {
+    
+    width: 20% !important;
+    background-color:#900 !important;
+  }
+  .ico_svg_profe{
+    height:50px ;
+  }
+}
+@media (max-width: 1200px) {
+  .datosmaterial {
+    
+  }
+  .op_mat {
+    display: flex !important;
+    width: 20%;
+    background-color: antiquewhite;
+  }
+}
+.msje_profe {
+  width: 98%;
+  display: flex;
+}
+
+.txtmsg {
+  color: white;
+  font-size: 14px;
+  font-size: 400;
+  display: block;
+  align-self: center;
+  padding: 0px 0px 0px 0px;
+}
+.msje_profe img {
+  max-width: 160px;
+  padding: 20px 20px 0 0;
+}
+
+.msgtit_profe {
+  background-color: #bd1714;
+  color: white;
+  font-size: 22px;
+  padding: 4px 10px 4px 30px;
+  margin: 20px 0px;
+}
+
+.msg_profe {
+  color: white;
+  font-size: 16px;
+  padding: 4px;
+  line-height: 1.3;
+  font-weight: normal;
+}
+
+.datos_profe {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+
+.line_profe {
+  color: white;
+  width: 100%;
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 10px;
+}
+
+.img_profe {
+  max-width: 280px;
+  text-align: right;
+}
+
+.ico_svg_profe:hover {
+  filter: brightness(0) saturate(100%) invert(70%) sepia(55%) saturate(5614%)
+    hue-rotate(9deg) brightness(97%) contrast(101%);
+  transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+  .datosmaterial {
+    display: block !important;
+  }
+  .op_mat {
+    width: 100% !important;
+    background-color:#090 !important;
+  }
+  .ico_svg_profe{
+    height:50px ;
+  }
+
+
+  .col_profe,
+  .col_profe_items {
+    width: 100%;
+  }
+  .contenedor_sec_profe {
+    display: block;
+  }
+  .datos_profe {
+    font-size: 15px;
+    color: white;
+  }
+  .col_profe_items {
+    padding: 20px 0px;
+  }
+
+  .msje_profe img {
+    width: 80px;
+    display: block;
+    padding: 20px 20px;
+  }
+  .msje_profe {
+    width: 90%;
+    padding: 0px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .msje_profe img {
+    display: none;
+  }
+}
+
+/******FIN HOME GENERALIDADES*******/
